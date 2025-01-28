@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "clone-hag",
+    "amazon-clon-hag": "clone-hag",
+    "amazon-clone-hag": "clone-hag"
+  },
+  "targets": {},
+  "etags": {}
+}

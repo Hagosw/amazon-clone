@@ -1,0 +1,432 @@
+[debug] [2024-12-10T02:28:45.191Z] ----------------------------------------------------------------------
+[debug] [2024-12-10T02:28:45.200Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\happy\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-12-10T02:28:45.201Z] CLI Version:   13.28.0
+[debug] [2024-12-10T02:28:45.202Z] Platform:      win32
+[debug] [2024-12-10T02:28:45.202Z] Node Version:  v20.17.0
+[debug] [2024-12-10T02:28:45.203Z] Time:          Mon Dec 09 2024 21:28:45 GMT-0500 (Eastern Standard Time)
+[debug] [2024-12-10T02:28:45.203Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-10T02:28:45.783Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-10T02:28:45.785Z] > authorizing via signed-in user (noelh0618@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-12-10T02:28:45.836Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-12-10T02:28:45.838Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-12-10T02:28:45.870Z] [hub] writing locator at C:\Users\happy\AppData\Local\Temp\hub-clone-hag.json
+[debug] [2024-12-10T02:28:45.992Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-12-10T02:28:45.993Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-12-10T02:28:45.994Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-12-10T02:28:45.994Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-12-10T02:28:46.032Z] defaultcredentials: writing to file C:\Users\happy\AppData\Roaming\firebase\noelh0618_gmail_com_application_default_credentials.json
+[debug] [2024-12-10T02:28:46.088Z] Setting GAC to C:\Users\happy\AppData\Roaming\firebase\noelh0618_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\happy\\AppData\\Roaming\\firebase\\noelh0618_gmail_com_application_default_credentials.json"}}
+[debug] [2024-12-10T02:28:46.091Z] Checked if tokens are valid: false, expires at: 1733790747178
+[debug] [2024-12-10T02:28:46.092Z] Checked if tokens are valid: false, expires at: 1733790747178
+[debug] [2024-12-10T02:28:46.092Z] > refreshing access token with scopes: []
+[debug] [2024-12-10T02:28:46.099Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-12-10T02:28:46.099Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-10T02:28:46.278Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-12-10T02:28:46.278Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-10T02:28:46.307Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-hag/adminSdkConfig [none]
+[debug] [2024-12-10T02:28:46.712Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-hag/adminSdkConfig 200
+[debug] [2024-12-10T02:28:46.712Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-hag/adminSdkConfig {"projectId":"clone-hag","storageBucket":"clone-hag.firebasestorage.app"}
+[info] i  functions: Watching "C:\Users\happy\Desktop\Evangadi\Phase4\amazonClone\amazon-clone-hag\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\happy\\Desktop\\Evangadi\\Phase4\\amazonClone\\amazon-clone-hag\\functions\" for Cloud Functions..."}}
+[debug] [2024-12-10T02:28:46.836Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-12-10T02:28:50.941Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-12-10T02:28:50.941Z] Building nodejs source
+[debug] [2024-12-10T02:28:50.942Z] Failed to find version of module node: reached end of search path C:\Users\happy\Desktop\Evangadi\Phase4\amazonClone\amazon-clone-hag\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-12-10T02:28:50.956Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-12-10T02:28:50.990Z] Found firebase-functions binary at 'C:\Users\happy\Desktop\Evangadi\Phase4\amazonClone\amazon-clone-hag\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8322
+
+[debug] [2024-12-10T02:28:55.097Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":10,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-hag/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-hag/us-central1/api)."}}
+[debug] [2024-12-10T02:29:00.199Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-12-10T02:29:12.606Z] [work-queue] {"queuedWork":["/clone-hag/us-central1/api-2024-12-10T02:29:12.606Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-12-10T02:29:12.607Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-hag/us-central1/api-2024-12-10T02:29:12.606Z"],"workRunningCount":1}
+[debug] [2024-12-10T02:29:12.608Z] Accepted request GET /clone-hag/us-central1/api --> us-central1-api
+[debug] [2024-12-10T02:29:12.613Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-12-10T02:29:12.614Z] [functions] Got req.url=/clone-hag/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-hag/us-central1/api, mapping to path=/"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-12-10T02:29:12.642Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2024-12-10T02:29:12.644Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2024-12-10T02:29:19.707Z] [runtime-status] [2592] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Users\\happy\\Desktop\\Evangadi\\Phase4\\amazonClone\\amazon-clone-hag\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2592] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Users\\\\happy\\\\Desktop\\\\Evangadi\\\\Phase4\\\\amazonClone\\\\amazon-clone-hag\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-12-10T02:29:19.715Z] [runtime-status] [2592] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.0.1","resolution":"C:\\Users\\happy\\Desktop\\Evangadi\\Phase4\\amazonClone\\amazon-clone-hag\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2592] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.0.1\",\"resolution\":\"C:\\\\Users\\\\happy\\\\Desktop\\\\Evangadi\\\\Phase4\\\\amazonClone\\\\amazon-clone-hag\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2024-12-10T02:29:19.717Z] [runtime-status] [2592] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2592] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-12-10T02:29:19.719Z] [runtime-status] [2592] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.0.1","resolution":"C:\\Users\\happy\\Desktop\\Evangadi\\Phase4\\amazonClone\\amazon-clone-hag\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2592] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.0.1\",\"resolution\":\"C:\\\\Users\\\\happy\\\\Desktop\\\\Evangadi\\\\Phase4\\\\amazonClone\\\\amazon-clone-hag\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2024-12-10T02:29:20.968Z] [runtime-status] [2592] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2592] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-12-10T02:29:20.968Z] [runtime-status] [2592] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"6.0.1","resolution":"C:\\Users\\happy\\Desktop\\Evangadi\\Phase4\\amazonClone\\amazon-clone-hag\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2592] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"6.0.1\",\"resolution\":\"C:\\\\Users\\\\happy\\\\Desktop\\\\Evangadi\\\\Phase4\\\\amazonClone\\\\amazon-clone-hag\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}}"}}
+[debug] [2024-12-10T02:29:20.970Z] [runtime-status] [2592] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.0.1","resolution":"C:\\Users\\happy\\Desktop\\Evangadi\\Phase4\\amazonClone\\amazon-clone-hag\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2592] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.0.1\",\"resolution\":\"C:\\\\Users\\\\happy\\\\Desktop\\\\Evangadi\\\\Phase4\\\\amazonClone\\\\amazon-clone-hag\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2024-12-10T02:29:20.988Z] [runtime-status] [2592] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Users\\happy\\Desktop\\Evangadi\\Phase4\\amazonClone\\amazon-clone-hag\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2592] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Users\\\\happy\\\\Desktop\\\\Evangadi\\\\Phase4\\\\amazonClone\\\\amazon-clone-hag\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-12-10T02:29:20.997Z] [runtime-status] [2592] Resolved module firebase-functions {"declared":true,"installed":true,"version":"6.0.1","resolution":"C:\\Users\\happy\\Desktop\\Evangadi\\Phase4\\amazonClone\\amazon-clone-hag\\functions\\node_modules\\firebase-functions\\lib\\v2\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2592] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"6.0.1\",\"resolution\":\"C:\\\\Users\\\\happy\\\\Desktop\\\\Evangadi\\\\Phase4\\\\amazonClone\\\\amazon-clone-hag\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v2\\\\index.js\"}"}}
+[debug] [2024-12-10T02:29:20.999Z] [runtime-status] [2592] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"C:\\Users\\happy\\Desktop\\Evangadi\\Phase4\\amazonClone\\amazon-clone-hag\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2592] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"C:\\\\Users\\\\happy\\\\Desktop\\\\Evangadi\\\\Phase4\\\\amazonClone\\\\amazon-clone-hag\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-12-10T02:29:21.693Z] [runtime-status] [2592] Functions runtime initialized. {"cwd":"C:\\Users\\happy\\Desktop\\Evangadi\\Phase4\\amazonClone\\amazon-clone-hag\\functions","node_version":"20.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2592] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\happy\\\\Desktop\\\\Evangadi\\\\Phase4\\\\amazonClone\\\\amazon-clone-hag\\\\functions\",\"node_version\":\"20.17.0\"}"}}
+[debug] [2024-12-10T02:29:21.695Z] [runtime-status] [2592] Listening to port: \\?\pipe\fire_emu_b920aa0afd0afb85 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2592] Listening to port: \\\\?\\pipe\\fire_emu_b920aa0afd0afb85"}}
+[debug] [2024-12-10T02:29:21.780Z] [worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: IDLE"}}
+[debug] [2024-12-10T02:29:21.781Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-12-10T02:29:21.784Z] [worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: BUSY"}}
+[debug] [2024-12-10T02:29:21.797Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 13.8478ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 13.8478ms"}}
+[debug] [2024-12-10T02:29:21.799Z] [worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: IDLE"}}
+[debug] [2024-12-10T02:29:21.799Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-12-10T02:29:21.800Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-12-10T02:29:21.801Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-12-10T02:29:21.804Z] [work-queue] {"queuedWork":["/clone-hag/us-central1/api-2024-12-10T02:29:21.804Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-12-10T02:29:21.805Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-hag/us-central1/api-2024-12-10T02:29:21.804Z"],"workRunningCount":1}
+[debug] [2024-12-10T02:29:21.805Z] Accepted request GET /clone-hag/us-central1/api --> us-central1-api
+[debug] [2024-12-10T02:29:21.814Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-12-10T02:29:21.814Z] [functions] Got req.url=/clone-hag/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-hag/us-central1/api, mapping to path=/"}}
+[debug] [2024-12-10T02:29:21.814Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-12-10T02:29:21.816Z] [worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: BUSY"}}
+[debug] [2024-12-10T02:29:21.825Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 9.9003ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 9.9003ms"}}
+[debug] [2024-12-10T02:29:21.829Z] [worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: IDLE"}}
+[debug] [2024-12-10T02:29:21.829Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-12-10T02:29:21.829Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-12-10T02:29:21.832Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-12-10T02:31:46.447Z] [work-queue] {"queuedWork":["/clone-hag/us-central1/api/payment/create-2024-12-10T02:31:46.447Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-12-10T02:31:46.447Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-hag/us-central1/api/payment/create-2024-12-10T02:31:46.447Z"],"workRunningCount":1}
+[debug] [2024-12-10T02:31:46.447Z] Accepted request POST /clone-hag/us-central1/api/payment/create?total=181598 --> us-central1-api
+[debug] [2024-12-10T02:31:46.453Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-12-10T02:31:46.453Z] [functions] Got req.url=/clone-hag/us-central1/api/payment/create?total=181598, mapping to path=/payment/create?total=181598 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-hag/us-central1/api/payment/create?total=181598, mapping to path=/payment/create?total=181598"}}
+[debug] [2024-12-10T02:31:46.454Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-12-10T02:31:46.460Z] [worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: BUSY"}}
+[info] >  { {"user":"{","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m {"}}
+[info] >    id: 'pi_3QUJElRshHFc2TXE0H7leVzY', {"user":"  id: 'pi_3QUJElRshHFc2TXE0H7leVzY',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   id: 'pi_3QUJElRshHFc2TXE0H7leVzY',"}}
+[info] >    object: 'payment_intent', {"user":"  object: 'payment_intent',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   object: 'payment_intent',"}}
+[info] >    amount: 181598, {"user":"  amount: 181598,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   amount: 181598,"}}
+[info] >    amount_capturable: 0, {"user":"  amount_capturable: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   amount_capturable: 0,"}}
+[info] >    amount_details: { tip: {} }, {"user":"  amount_details: { tip: {} },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   amount_details: { tip: {} },"}}
+[info] >    amount_received: 0, {"user":"  amount_received: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   amount_received: 0,"}}
+[info] >    application: null, {"user":"  application: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   application: null,"}}
+[info] >    application_fee_amount: null, {"user":"  application_fee_amount: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   application_fee_amount: null,"}}
+[info] >    automatic_payment_methods: { allow_redirects: 'always', enabled: true }, {"user":"  automatic_payment_methods: { allow_redirects: 'always', enabled: true },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   automatic_payment_methods: { allow_redirects: 'always', enabled: true },"}}
+[info] >    canceled_at: null, {"user":"  canceled_at: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   canceled_at: null,"}}
+[info] >    cancellation_reason: null, {"user":"  cancellation_reason: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   cancellation_reason: null,"}}
+[info] >    capture_method: 'automatic_async', {"user":"  capture_method: 'automatic_async',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   capture_method: 'automatic_async',"}}
+[info] >    client_secret: 'pi_3QUJElRshHFc2TXE0H7leVzY_secret_PfhEqooDGl2UNxVziwVqqdM33', {"user":"  client_secret: 'pi_3QUJElRshHFc2TXE0H7leVzY_secret_PfhEqooDGl2UNxVziwVqqdM33',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   client_secret: 'pi_3QUJElRshHFc2TXE0H7leVzY_secret_PfhEqooDGl2UNxVziwVqqdM33',"}}
+[info] >    confirmation_method: 'automatic', {"user":"  confirmation_method: 'automatic',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   confirmation_method: 'automatic',"}}
+[info] >    created: 1733797907, {"user":"  created: 1733797907,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   created: 1733797907,"}}
+[info] >    currency: 'usd', {"user":"  currency: 'usd',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   currency: 'usd',"}}
+[info] >    customer: null, {"user":"  customer: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   customer: null,"}}
+[info] >    description: null, {"user":"  description: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   description: null,"}}
+[info] >    invoice: null, {"user":"  invoice: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   invoice: null,"}}
+[info] >    last_payment_error: null, {"user":"  last_payment_error: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   last_payment_error: null,"}}
+[info] >    latest_charge: null, {"user":"  latest_charge: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   latest_charge: null,"}}
+[info] >    livemode: false, {"user":"  livemode: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   livemode: false,"}}
+[info] >    metadata: {}, {"user":"  metadata: {},","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   metadata: {},"}}
+[info] >    next_action: null, {"user":"  next_action: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   next_action: null,"}}
+[info] >    on_behalf_of: null, {"user":"  on_behalf_of: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   on_behalf_of: null,"}}
+[info] >    payment_method: null, {"user":"  payment_method: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method: null,"}}
+[info] >    payment_method_configuration_details: { id: 'pmc_1QUCblRshHFc2TXEmWLytToQ', parent: null }, {"user":"  payment_method_configuration_details: { id: 'pmc_1QUCblRshHFc2TXEmWLytToQ', parent: null },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method_configuration_details: { id: 'pmc_1QUCblRshHFc2TXEmWLytToQ', parent: null },"}}
+[info] >    payment_method_options: { {"user":"  payment_method_options: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method_options: {"}}
+[info] >      card: { {"user":"    card: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     card: {"}}
+[info] >        installments: null, {"user":"      installments: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       installments: null,"}}
+[info] >        mandate_options: null, {"user":"      mandate_options: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       mandate_options: null,"}}
+[info] >        network: null, {"user":"      network: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       network: null,"}}
+[info] >        request_three_d_secure: 'automatic' {"user":"      request_three_d_secure: 'automatic'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       request_three_d_secure: 'automatic'"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      cashapp: {}, {"user":"    cashapp: {},","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     cashapp: {},"}}
+[info] >      link: { persistent_token: null } {"user":"    link: { persistent_token: null }","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     link: { persistent_token: null }"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    payment_method_types: [ 'card', 'link', 'cashapp' ], {"user":"  payment_method_types: [ 'card', 'link', 'cashapp' ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method_types: [ 'card', 'link', 'cashapp' ],"}}
+[info] >    processing: null, {"user":"  processing: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   processing: null,"}}
+[info] >    receipt_email: null, {"user":"  receipt_email: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   receipt_email: null,"}}
+[info] >    review: null, {"user":"  review: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   review: null,"}}
+[info] >    setup_future_usage: null, {"user":"  setup_future_usage: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   setup_future_usage: null,"}}
+[info] >    shipping: null, {"user":"  shipping: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   shipping: null,"}}
+[info] >    source: null, {"user":"  source: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   source: null,"}}
+[info] >    statement_descriptor: null, {"user":"  statement_descriptor: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   statement_descriptor: null,"}}
+[info] >    statement_descriptor_suffix: null, {"user":"  statement_descriptor_suffix: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   statement_descriptor_suffix: null,"}}
+[info] >    status: 'requires_payment_method', {"user":"  status: 'requires_payment_method',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   status: 'requires_payment_method',"}}
+[info] >    transfer_data: null, {"user":"  transfer_data: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   transfer_data: null,"}}
+[info] >    transfer_group: null {"user":"  transfer_group: null","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   transfer_group: null"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[debug] [2024-12-10T02:31:47.728Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 1268.0276ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 1268.0276ms"}}
+[debug] [2024-12-10T02:31:47.749Z] [worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: IDLE"}}
+[debug] [2024-12-10T02:31:47.749Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-12-10T02:31:47.749Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-12-10T02:31:47.750Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-12-10T02:33:45.409Z] [work-queue] {"queuedWork":["/clone-hag/us-central1/api/payment/create-2024-12-10T02:33:45.409Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-12-10T02:33:45.410Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-hag/us-central1/api/payment/create-2024-12-10T02:33:45.409Z"],"workRunningCount":1}
+[debug] [2024-12-10T02:33:45.410Z] Accepted request POST /clone-hag/us-central1/api/payment/create?total=181598 --> us-central1-api
+[debug] [2024-12-10T02:33:45.417Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-12-10T02:33:45.418Z] [functions] Got req.url=/clone-hag/us-central1/api/payment/create?total=181598, mapping to path=/payment/create?total=181598 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-hag/us-central1/api/payment/create?total=181598, mapping to path=/payment/create?total=181598"}}
+[debug] [2024-12-10T02:33:45.418Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-12-10T02:33:45.423Z] [worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: BUSY"}}
+[info] >  { {"user":"{","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m {"}}
+[info] >    id: 'pi_3QUJGfRshHFc2TXE04NQ8JEu', {"user":"  id: 'pi_3QUJGfRshHFc2TXE04NQ8JEu',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   id: 'pi_3QUJGfRshHFc2TXE04NQ8JEu',"}}
+[info] >    object: 'payment_intent', {"user":"  object: 'payment_intent',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   object: 'payment_intent',"}}
+[info] >    amount: 181598, {"user":"  amount: 181598,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   amount: 181598,"}}
+[info] >    amount_capturable: 0, {"user":"  amount_capturable: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   amount_capturable: 0,"}}
+[info] >    amount_details: { tip: {} }, {"user":"  amount_details: { tip: {} },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   amount_details: { tip: {} },"}}
+[info] >    amount_received: 0, {"user":"  amount_received: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   amount_received: 0,"}}
+[info] >    application: null, {"user":"  application: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   application: null,"}}
+[info] >    application_fee_amount: null, {"user":"  application_fee_amount: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   application_fee_amount: null,"}}
+[info] >    automatic_payment_methods: { allow_redirects: 'always', enabled: true }, {"user":"  automatic_payment_methods: { allow_redirects: 'always', enabled: true },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   automatic_payment_methods: { allow_redirects: 'always', enabled: true },"}}
+[info] >    canceled_at: null, {"user":"  canceled_at: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   canceled_at: null,"}}
+[info] >    cancellation_reason: null, {"user":"  cancellation_reason: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   cancellation_reason: null,"}}
+[info] >    capture_method: 'automatic_async', {"user":"  capture_method: 'automatic_async',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   capture_method: 'automatic_async',"}}
+[info] >    client_secret: 'pi_3QUJGfRshHFc2TXE04NQ8JEu_secret_sw8KeuDxnGLiqJVHd2hffvBXu', {"user":"  client_secret: 'pi_3QUJGfRshHFc2TXE04NQ8JEu_secret_sw8KeuDxnGLiqJVHd2hffvBXu',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   client_secret: 'pi_3QUJGfRshHFc2TXE04NQ8JEu_secret_sw8KeuDxnGLiqJVHd2hffvBXu',"}}
+[info] >    confirmation_method: 'automatic', {"user":"  confirmation_method: 'automatic',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   confirmation_method: 'automatic',"}}
+[info] >    created: 1733798025, {"user":"  created: 1733798025,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   created: 1733798025,"}}
+[info] >    currency: 'usd', {"user":"  currency: 'usd',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   currency: 'usd',"}}
+[info] >    customer: null, {"user":"  customer: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   customer: null,"}}
+[info] >    description: null, {"user":"  description: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   description: null,"}}
+[info] >    invoice: null, {"user":"  invoice: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   invoice: null,"}}
+[info] >    last_payment_error: null, {"user":"  last_payment_error: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   last_payment_error: null,"}}
+[info] >    latest_charge: null, {"user":"  latest_charge: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   latest_charge: null,"}}
+[info] >    livemode: false, {"user":"  livemode: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   livemode: false,"}}
+[info] >    metadata: {}, {"user":"  metadata: {},","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   metadata: {},"}}
+[info] >    next_action: null, {"user":"  next_action: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   next_action: null,"}}
+[info] >    on_behalf_of: null, {"user":"  on_behalf_of: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   on_behalf_of: null,"}}
+[info] >    payment_method: null, {"user":"  payment_method: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method: null,"}}
+[info] >    payment_method_configuration_details: { id: 'pmc_1QUCblRshHFc2TXEmWLytToQ', parent: null }, {"user":"  payment_method_configuration_details: { id: 'pmc_1QUCblRshHFc2TXEmWLytToQ', parent: null },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method_configuration_details: { id: 'pmc_1QUCblRshHFc2TXEmWLytToQ', parent: null },"}}
+[info] >    payment_method_options: { {"user":"  payment_method_options: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method_options: {"}}
+[info] >      card: { {"user":"    card: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     card: {"}}
+[info] >        installments: null, {"user":"      installments: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       installments: null,"}}
+[info] >        mandate_options: null, {"user":"      mandate_options: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       mandate_options: null,"}}
+[info] >        network: null, {"user":"      network: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       network: null,"}}
+[info] >        request_three_d_secure: 'automatic' {"user":"      request_three_d_secure: 'automatic'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       request_three_d_secure: 'automatic'"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      cashapp: {}, {"user":"    cashapp: {},","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     cashapp: {},"}}
+[info] >      link: { persistent_token: null } {"user":"    link: { persistent_token: null }","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     link: { persistent_token: null }"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    payment_method_types: [ 'card', 'link', 'cashapp' ], {"user":"  payment_method_types: [ 'card', 'link', 'cashapp' ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method_types: [ 'card', 'link', 'cashapp' ],"}}
+[info] >    processing: null, {"user":"  processing: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   processing: null,"}}
+[info] >    receipt_email: null, {"user":"  receipt_email: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   receipt_email: null,"}}
+[info] >    review: null, {"user":"  review: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   review: null,"}}
+[info] >    setup_future_usage: null, {"user":"  setup_future_usage: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   setup_future_usage: null,"}}
+[info] >    shipping: null, {"user":"  shipping: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   shipping: null,"}}
+[info] >    source: null, {"user":"  source: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   source: null,"}}
+[info] >    statement_descriptor: null, {"user":"  statement_descriptor: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   statement_descriptor: null,"}}
+[info] >    statement_descriptor_suffix: null, {"user":"  statement_descriptor_suffix: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   statement_descriptor_suffix: null,"}}
+[info] >    status: 'requires_payment_method', {"user":"  status: 'requires_payment_method',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   status: 'requires_payment_method',"}}
+[info] >    transfer_data: null, {"user":"  transfer_data: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   transfer_data: null,"}}
+[info] >    transfer_group: null {"user":"  transfer_group: null","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   transfer_group: null"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[debug] [2024-12-10T02:33:45.890Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 469.6817ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 469.6817ms"}}
+[debug] [2024-12-10T02:33:45.910Z] [worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: IDLE"}}
+[debug] [2024-12-10T02:33:45.919Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-12-10T02:33:45.920Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-12-10T02:33:45.922Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-12-10T02:34:58.354Z] [work-queue] {"queuedWork":["/clone-hag/us-central1/api/payment/create-2024-12-10T02:34:58.354Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-12-10T02:34:58.355Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-hag/us-central1/api/payment/create-2024-12-10T02:34:58.354Z"],"workRunningCount":1}
+[debug] [2024-12-10T02:34:58.355Z] Accepted request POST /clone-hag/us-central1/api/payment/create?total=181598 --> us-central1-api
+[debug] [2024-12-10T02:34:58.360Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-12-10T02:34:58.360Z] [functions] Got req.url=/clone-hag/us-central1/api/payment/create?total=181598, mapping to path=/payment/create?total=181598 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-hag/us-central1/api/payment/create?total=181598, mapping to path=/payment/create?total=181598"}}
+[debug] [2024-12-10T02:34:58.361Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-12-10T02:34:58.362Z] [worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: BUSY"}}
+[info] >  { {"user":"{","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m {"}}
+[info] >    id: 'pi_3QUJHqRshHFc2TXE1rlEYQyP', {"user":"  id: 'pi_3QUJHqRshHFc2TXE1rlEYQyP',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   id: 'pi_3QUJHqRshHFc2TXE1rlEYQyP',"}}
+[info] >    object: 'payment_intent', {"user":"  object: 'payment_intent',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   object: 'payment_intent',"}}
+[info] >    amount: 181598, {"user":"  amount: 181598,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   amount: 181598,"}}
+[info] >    amount_capturable: 0, {"user":"  amount_capturable: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   amount_capturable: 0,"}}
+[info] >    amount_details: { tip: {} }, {"user":"  amount_details: { tip: {} },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   amount_details: { tip: {} },"}}
+[info] >    amount_received: 0, {"user":"  amount_received: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   amount_received: 0,"}}
+[info] >    application: null, {"user":"  application: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   application: null,"}}
+[info] >    application_fee_amount: null, {"user":"  application_fee_amount: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   application_fee_amount: null,"}}
+[info] >    automatic_payment_methods: { allow_redirects: 'always', enabled: true }, {"user":"  automatic_payment_methods: { allow_redirects: 'always', enabled: true },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   automatic_payment_methods: { allow_redirects: 'always', enabled: true },"}}
+[info] >    canceled_at: null, {"user":"  canceled_at: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   canceled_at: null,"}}
+[info] >    cancellation_reason: null, {"user":"  cancellation_reason: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   cancellation_reason: null,"}}
+[info] >    capture_method: 'automatic_async', {"user":"  capture_method: 'automatic_async',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   capture_method: 'automatic_async',"}}
+[info] >    client_secret: 'pi_3QUJHqRshHFc2TXE1rlEYQyP_secret_ozQUX5ShGwvHw8BKryC3s4rnX', {"user":"  client_secret: 'pi_3QUJHqRshHFc2TXE1rlEYQyP_secret_ozQUX5ShGwvHw8BKryC3s4rnX',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   client_secret: 'pi_3QUJHqRshHFc2TXE1rlEYQyP_secret_ozQUX5ShGwvHw8BKryC3s4rnX',"}}
+[info] >    confirmation_method: 'automatic', {"user":"  confirmation_method: 'automatic',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   confirmation_method: 'automatic',"}}
+[info] >    created: 1733798098, {"user":"  created: 1733798098,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   created: 1733798098,"}}
+[info] >    currency: 'usd', {"user":"  currency: 'usd',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   currency: 'usd',"}}
+[info] >    customer: null, {"user":"  customer: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   customer: null,"}}
+[info] >    description: null, {"user":"  description: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   description: null,"}}
+[info] >    invoice: null, {"user":"  invoice: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   invoice: null,"}}
+[info] >    last_payment_error: null, {"user":"  last_payment_error: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   last_payment_error: null,"}}
+[info] >    latest_charge: null, {"user":"  latest_charge: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   latest_charge: null,"}}
+[info] >    livemode: false, {"user":"  livemode: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   livemode: false,"}}
+[info] >    metadata: {}, {"user":"  metadata: {},","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   metadata: {},"}}
+[info] >    next_action: null, {"user":"  next_action: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   next_action: null,"}}
+[info] >    on_behalf_of: null, {"user":"  on_behalf_of: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   on_behalf_of: null,"}}
+[info] >    payment_method: null, {"user":"  payment_method: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method: null,"}}
+[info] >    payment_method_configuration_details: { id: 'pmc_1QUCblRshHFc2TXEmWLytToQ', parent: null }, {"user":"  payment_method_configuration_details: { id: 'pmc_1QUCblRshHFc2TXEmWLytToQ', parent: null },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method_configuration_details: { id: 'pmc_1QUCblRshHFc2TXEmWLytToQ', parent: null },"}}
+[info] >    payment_method_options: { {"user":"  payment_method_options: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method_options: {"}}
+[info] >      card: { {"user":"    card: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     card: {"}}
+[info] >        installments: null, {"user":"      installments: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       installments: null,"}}
+[info] >        mandate_options: null, {"user":"      mandate_options: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       mandate_options: null,"}}
+[info] >        network: null, {"user":"      network: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       network: null,"}}
+[info] >        request_three_d_secure: 'automatic' {"user":"      request_three_d_secure: 'automatic'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m       request_three_d_secure: 'automatic'"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      cashapp: {}, {"user":"    cashapp: {},","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     cashapp: {},"}}
+[info] >      link: { persistent_token: null } {"user":"    link: { persistent_token: null }","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     link: { persistent_token: null }"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    payment_method_types: [ 'card', 'link', 'cashapp' ], {"user":"  payment_method_types: [ 'card', 'link', 'cashapp' ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method_types: [ 'card', 'link', 'cashapp' ],"}}
+[info] >    processing: null, {"user":"  processing: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   processing: null,"}}
+[info] >    receipt_email: null, {"user":"  receipt_email: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   receipt_email: null,"}}
+[info] >    review: null, {"user":"  review: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   review: null,"}}
+[info] >    setup_future_usage: null, {"user":"  setup_future_usage: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   setup_future_usage: null,"}}
+[info] >    shipping: null, {"user":"  shipping: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   shipping: null,"}}
+[info] >    source: null, {"user":"  source: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   source: null,"}}
+[info] >    statement_descriptor: null, {"user":"  statement_descriptor: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   statement_descriptor: null,"}}
+[info] >    statement_descriptor_suffix: null, {"user":"  statement_descriptor_suffix: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   statement_descriptor_suffix: null,"}}
+[info] >    status: 'requires_payment_method', {"user":"  status: 'requires_payment_method',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   status: 'requires_payment_method',"}}
+[info] >    transfer_data: null, {"user":"  transfer_data: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   transfer_data: null,"}}
+[info] >    transfer_group: null {"user":"  transfer_group: null","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m   transfer_group: null"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[debug] [2024-12-10T02:34:58.722Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 364.4845ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 364.4845ms"}}
+[debug] [2024-12-10T02:34:58.738Z] [worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-c968e15d-4408-4d73-b13b-e88a46cec97b]: IDLE"}}
+[debug] [2024-12-10T02:34:58.738Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-12-10T02:34:58.738Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-12-10T02:34:58.739Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-12-19T15:35:28.255Z] ----------------------------------------------------------------------
+[debug] [2024-12-19T15:35:28.259Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\happy\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2024-12-19T15:35:28.260Z] CLI Version:   13.28.0
+[debug] [2024-12-19T15:35:28.260Z] Platform:      win32
+[debug] [2024-12-19T15:35:28.260Z] Node Version:  v20.17.0
+[debug] [2024-12-19T15:35:28.261Z] Time:          Thu Dec 19 2024 10:35:28 GMT-0500 (Eastern Standard Time)
+[debug] [2024-12-19T15:35:28.261Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-19T15:35:28.267Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-12-19T15:35:28.445Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-19T15:35:28.445Z] > authorizing via signed-in user (noelh0618@gmail.com)
+[debug] [2024-12-19T15:35:28.445Z] [iam] checking project clone-hag for permissions ["firebase.projects.get"]
+[debug] [2024-12-19T15:35:28.446Z] Checked if tokens are valid: false, expires at: 1733801325279
+[debug] [2024-12-19T15:35:28.447Z] Checked if tokens are valid: false, expires at: 1733801325279
+[debug] [2024-12-19T15:35:28.447Z] > refreshing access token with scopes: []
+[debug] [2024-12-19T15:35:28.448Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-12-19T15:35:28.449Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-19T15:35:28.609Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-12-19T15:35:28.609Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-12-19T15:35:28.640Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-12-19T15:35:28.641Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-19T15:35:28.660Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-hag:testIamPermissions [none]
+[debug] [2024-12-19T15:35:28.660Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-hag:testIamPermissions x-goog-quota-user=projects/clone-hag
+[debug] [2024-12-19T15:35:28.661Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-hag:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-19T15:35:28.836Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-hag:testIamPermissions 200
+[debug] [2024-12-19T15:35:28.837Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-hag:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-12-19T15:35:28.872Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-12-19T15:35:28.880Z] defaultcredentials: writing to file C:\Users\happy\AppData\Roaming\firebase\noelh0618_gmail_com_application_default_credentials.json
+[debug] [2024-12-19T15:35:28.885Z] DEBUG: Setting GAC to C:\Users\happy\AppData\Roaming\firebase\noelh0618_gmail_com_application_default_credentials.json
+[debug] [2024-12-19T15:35:28.886Z] Checked if tokens are valid: true, expires at: 1734626127641
+[debug] [2024-12-19T15:35:28.886Z] Checked if tokens are valid: true, expires at: 1734626127641
+[debug] [2024-12-19T15:35:28.887Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-hag/adminSdkConfig [none]
+[debug] [2024-12-19T15:35:29.266Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-hag/adminSdkConfig 200
+[debug] [2024-12-19T15:35:29.267Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-hag/adminSdkConfig {"projectId":"clone-hag","storageBucket":"clone-hag.firebasestorage.app"}
+[debug] [2024-12-19T15:35:29.322Z] [functions] Watching "C:\Users\happy\Desktop\Evangadi\Phase4\amazonClone\amazon-clone-hag\functions" for Cloud Functions...
+[debug] [2024-12-19T15:35:29.330Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-12-19T15:35:30.919Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "stripe": "^17.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-12-19T15:35:30.922Z] Building nodejs source
+[debug] [2024-12-19T15:35:30.923Z] Failed to find version of module node: reached end of search path C:\Users\happy\Desktop\Evangadi\Phase4\amazonClone\amazon-clone-hag\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-12-19T15:35:30.931Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-12-19T15:35:30.961Z] Found firebase-functions binary at 'C:\Users\happy\Desktop\Evangadi\Phase4\amazonClone\amazon-clone-hag\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8166
+
+[debug] [2024-12-19T15:35:33.017Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":10,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2024-12-19T15:35:38.118Z] [functions] Loaded functions definitions from source: api.
+[debug] [2024-12-19T15:35:38.120Z] [functions[us-central1-api]] http function initialized (http://127.0.0.1:5000/clone-hag/us-central1/api).
+[info] i  functions: Loaded functions: api 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage, eventarc, tasks 
+[debug] [2024-12-19T15:49:31.722Z] Functions emulator received unknown request at path /api/v1/user/check
+[debug] [2024-12-19T15:49:31.949Z] Functions emulator received unknown request at path /api/v1/questions
+[debug] [2024-12-19T15:49:32.691Z] Functions emulator received unknown request at path /api/v1/questions
+[debug] [2024-12-19T15:49:32.705Z] Functions emulator received unknown request at path /api/v1/user/check
+[debug] [2024-12-19T15:49:35.180Z] Functions emulator received unknown request at path /api/v1/questions
+[debug] [2024-12-19T15:49:35.183Z] Functions emulator received unknown request at path /api/v1/user/check
+[debug] [2024-12-19T15:50:00.544Z] Functions emulator received unknown request at path /api/v1/user/Login
+[debug] [2024-12-19T15:50:14.909Z] Functions emulator received unknown request at path /api/v1/user/Login
+[debug] [2024-12-19T15:50:27.093Z] Functions emulator received unknown request at path /api/v1/user/Login
+[debug] [2024-12-19T15:50:52.709Z] Functions emulator received unknown request at path /api/v1/user/forgotPassword
+[debug] [2024-12-19T15:51:30.386Z] Functions emulator received unknown request at path /api/v1/user/Login
+[debug] [2024-12-19T15:51:40.747Z] Functions emulator received unknown request at path /api/v1/user/Login
+[debug] [2024-12-19T15:52:18.588Z] Functions emulator received unknown request at path /api/v1/user/Login
+[debug] [2024-12-19T15:52:27.422Z] Functions emulator received unknown request at path /api/v1/user/Login
+[debug] [2024-12-19T15:52:34.916Z] Functions emulator received unknown request at path /api/v1/user/Login
+[debug] [2024-12-19T15:52:53.449Z] Functions emulator received unknown request at path /api/v1/user/Login
+[debug] [2024-12-19T15:53:07.033Z] Functions emulator received unknown request at path /api/v1/user/Login
+[debug] [2024-12-19T15:53:23.201Z] Functions emulator received unknown request at path /api/v1/user/Login
+[debug] [2024-12-19T16:52:58.179Z] Functions emulator received unknown request at path /api/v1/user/check
+[debug] [2024-12-19T16:52:58.189Z] Functions emulator received unknown request at path /api/v1/questions
+[debug] [2024-12-19T16:54:04.412Z] Functions emulator received unknown request at path /api/v1/user/register
