@@ -1,9 +1,9 @@
 import { useContext, useEffect } from "react"; 
 import "./App.css"; 
-import Routing from "./Router.jsx"; 
-import { DataContext } from "./components/DataProvider/DataProvider.jsx"; 
-import { auth } from "./Utility/firebase.js"; 
-import { Type } from "./Utility/action.type.js"; 
+import Routing from "./src/Router.jsx"; 
+import { DataContext } from "./src/components/DataProvider/DataProvider.jsx"; 
+import { auth } from "./src/Utility/firebase.js"; 
+import { Type } from "./src/Utility/action.type.js"; 
 
 
 function App() {
